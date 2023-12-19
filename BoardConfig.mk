@@ -50,7 +50,7 @@ TARGET_SCREEN_DENSITY := 440
 
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 4
-BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 disable_dma32=on swinfo.fingerprint=marble_eea:13/V14.0.9.0.TMREUXM:user mtdoops.fingerprint=marble_eea:13/V14.0.9.0.TMREUXM:user bootconfig
+BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 disable_dma32=on swinfo.fingerprint=marble_eea:12/V816.0.4.0.UMREUXM:user mtdoops.fingerprint=marble_eea:12/V816.0.4.0.UMREUXM:user bootconfig
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image

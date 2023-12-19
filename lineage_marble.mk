@@ -23,6 +23,6 @@ PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="marble-user 13 SKQ1.221022.001 V14.0.9.0.TMREUXM release-keys"
+    PRIVATE_BUILD_DESC="marble-user 12 SKQ1.230401.001 V816.0.4.0.UMREUXM release-keys"
 
-BUILD_FINGERPRINT := Xiaomi/marble/marble:13/SKQ1.221022.001/V14.0.9.0.TMREUXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/marble/marble:12/SKQ1.230401.001/V816.0.4.0.UMREUXM:user/release-keys
