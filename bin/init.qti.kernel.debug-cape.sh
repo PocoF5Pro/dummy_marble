@@ -2659,7 +2659,7 @@ config_dcc_tsens()
     echo 0x0C26513C 1 > $DCC_PATH/config
 }
 
-cofig_dcc_gcc()
+config_dcc_gcc()
 {
     echo 0x116100 > $DCC_PATH/config
     echo 0x120004 9 > $DCC_PATH/config
@@ -2847,7 +2847,7 @@ cofig_dcc_gcc()
     echo 0x192004 17 > $DCC_PATH/config
     echo 0x19216c 2 > $DCC_PATH/config
     echo 0x192298 2 > $DCC_PATH/config
-    echo 0x193004 2 > $DCC_PATH/config
+    echo 0x193004 3 > $DCC_PATH/config
     echo 0x193010 2 > $DCC_PATH/config
     echo 0x193140 > $DCC_PATH/config
     echo 0x194004 > $DCC_PATH/config
@@ -3266,8 +3266,8 @@ config_smmu()
 
     #TCU change
     #echo 0x183008 0x1 > $DCC_PATH/config_write
-    echo 0x193008 1 > $DCC_PATH/config #GCC_MMU_TCU_CBCR
-    echo 0x19300C 1 > $DCC_PATH/config #GCC_MMU_TCU_SREGR
+    #echo 0x193008 1 > $DCC_PATH/config #GCC_MMU_TCU_CBCR
+    #echo 0x19300C 1 > $DCC_PATH/config #GCC_MMU_TCU_SREGR
     #echo 0x15002300 0x40000000 > $DCC_PATH/config_write
     #
     echo 0x15002670 1 > $DCC_PATH/config #0x0, APPS_SMMU_MMU2QSS_AND_SAFE_WAIT_CNTR
@@ -3977,7 +3977,7 @@ enable_dcc()
     config_dcc_gict
     config_dcc_modem
     config_dcc_limit
-    cofig_dcc_gcc
+    config_dcc_gcc
 
     echo 3 > $DCC_PATH/curr_list
     echo cap > $DCC_PATH/func_type
@@ -7608,12 +7608,6 @@ enable_debug()
         echo 1 > $tracefs/instances/slimbus/events/slimbus/slimbus_dbg/enable
         echo 1 > $tracefs/instances/slimbus/tracing_on
     fi
-
-    if [ "$ftrace_disable" != "Yes" ]; then
-        enable_kprobe_events
-    fi
 }
-
-
 
 enable_debug

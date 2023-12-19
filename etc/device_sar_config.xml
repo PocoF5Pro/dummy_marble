@@ -52,6 +52,20 @@ dsiMap：
         <dsimap value="1">1</dsimap>
         <dsimap value="0">2</dsimap>
     </deviceSarConfig>
+    <!-- only use for CN 24 -->
+    <deviceSarConfig device_name="marble">
+        <!-- <prop prop_name="persist.vendor.radio.dynamic_sar">1</prop> -->
+        <prop prop_name="ro.boot.hwc">CN_24</prop>
+        <prop prop_name="ro.product.mod_device">marble</prop>
+        <!-- receiver,hotSpot(wifi_spot,(bluetooth,bluetooth_pan)),sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb -->
+        <listeners>11111100000</listeners>
+        <!-- receiver,hotSpot,sarsensor1,sarsensor2 -->
+        <dsimap value="10FF">1</dsimap>
+        <dsimap value="0010">2</dsimap>
+        <dsimap value="00F1">3</dsimap>
+        <dsimap value="0000">4</dsimap>
+        <dsimap value="F1FF">5</dsimap>
+    </deviceSarConfig>
 
     <!-- default configuration. -->
     <deviceSarConfig device_name="marble">

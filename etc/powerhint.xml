@@ -1091,9 +1091,6 @@
             "/>
 
          <!-- camera START PREVIEW TP FRONT  tunings-->
-         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
-         <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0               (0x40804000),1651 -->
-         <!-- MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0             (0x40804200),806  -->
          <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
          <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
          <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE     (0x41440100),99   -->
@@ -1123,9 +1120,6 @@
          <Config
             Id="0x00001351" Type="0" Enable="true" Timeout="0" Target="ukee"
              Resources="
-            0x40804100,1075,
-            0x40804000,1651,
-            0x40804200,806,
             0x43048000,0,
             0x4184C000,0,
             0x41440100,99,

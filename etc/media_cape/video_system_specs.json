@@ -38,7 +38,8 @@
             // Rotating the frame etc
             "vtxr_enable": true,
             // this will enable software I/O chache coherency
-            "sw_cache_coherency": false
+            "sw_cache_coherency": false,
+            "vpp_lazy_init": true
         },
         "Presets": {
             // this is used for secure decoding performance boost handling

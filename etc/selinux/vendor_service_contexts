@@ -110,6 +110,10 @@ vendor.qti.hardware.data.connectionfactory.IFactory/slot0 u:object_r:vendor_hal_
 vendor.qti.hardware.data.connectionfactory.IFactory/slot1 u:object_r:vendor_hal_dataconnection_service:s0
 #line 1 "vendor/xiaomi/proprietary/mifingerprint/sepolicy/sepolicy-8450s/service_contexts"
 com.goodix.FingerprintService                  u:object_r:goodix_fingerprint_service:s0
+#line 1 "vendor/xiaomi/proprietary/miriskmanager/impl/sepolicy/service_contexts"
+vendor.xiaomi.hardware.mrm.IMrm/default            u:object_r:hal_mrm_service:s0
+vendor.xiaomi.hardware.mrm.IMiCertificate/default  u:object_r:hal_mrm_service:s0
+vendor.xiaomi.hardware.mrm.IMrmRemoteAuth/default  u:object_r:hal_mrm_service:s0
 #line 1 "device/xiaomi/sepolicy_vndr/generic/vendor/common/service_contexts"
 # add mi_nfc as nfc service
 mi_nfc                u:object_r:nfc_service:s0
@@ -117,3 +121,6 @@ mi_nfc                u:object_r:nfc_service:s0
 sla_management                                       u:object_r:sla_service:s0
 #line 1 "vendor/xiaomi/proprietary/interfaces/vibratorfeature/aidl/default/sepolicy/service_contexts"
 android.hardware.vibrator.IVibrator/vibratorfeature                          u:object_r:hal_vibrator_service:s0
+#line 1 "vendor/xiaomi/proprietary/misight/aidl/impl/sepolicy/service_contexts"
+vendor.xiaomi.hardware.misight.IMiSight/default       u:object_r:hal_misight_service:s0
+vendor.xiaomi.hardware.misight.ILogMgr/default        u:object_r:hal_misight_service:s0
