@@ -6,8 +6,8 @@
 
 // Init scripts
 sh_binary {
-    name: "audio_jack_status.sh",
-    src: "bin/audio_jack_status.sh",
+    name: "elliptic_uscal.sh",
+    src: "bin/elliptic_uscal.sh",
     vendor: true,
 }
 
@@ -186,12 +186,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "playback_headset.sh",
-    src: "bin/playback_headset.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "qca6234-service.sh",
     src: "bin/qca6234-service.sh",
     vendor: true,
@@ -212,12 +206,6 @@ sh_binary {
 sh_binary {
     name: "setup_rcv2topmic.sh",
     src: "bin/setup_rcv2topmic.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "spk_dsm_test.sh",
-    src: "bin/spk_dsm_test.sh",
     vendor: true,
 }
 

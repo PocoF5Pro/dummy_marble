@@ -201,7 +201,7 @@ on early-boot
     # Enable WLAN cold boot calibration
     write /sys/kernel/cnss/fs_ready 1
     # Enable WLAN SSR recovery
-    write /sys/kernel/cnss/recovery 1
+    #write /sys/kernel/cnss/recovery 1
     start vendor.sensors
     verity_update_state
 

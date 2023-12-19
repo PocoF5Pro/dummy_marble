@@ -61,7 +61,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    audio_jack_status.sh \
+    elliptic_uscal.sh \
     headset_detect.sh \
     init.class_main.sh \
     init.crda.sh \
@@ -91,12 +91,10 @@ PRODUCT_PACKAGES += \
     init.qti.qcv.sh \
     init.qti.touch_boot.sh \
     init.qti.write.sh \
-    playback_headset.sh \
     qca6234-service.sh \
     setup_rcv2backmic.sh \
     setup_rcv2mainmic.sh \
     setup_rcv2topmic.sh \
-    spk_dsm_test.sh \
     us_cal.sh \
     vendor_modprobe.sh \
 
@@ -126,4 +124,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/marble/marble-vendor.mk)
+$(call inherit-product, vendor/xiaomi/mondrian/mondrian-vendor.mk)

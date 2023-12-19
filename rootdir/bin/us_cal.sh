@@ -75,7 +75,7 @@ do
     sleep 0.5
 done
 echo "start playing"
-agmplay $playfilename -r 96000 -D 100 -d 100 -i TDM-LPAIF-RX-TERTIARY-VIRT-0  -dkv 0xA2000100
+agmplay $playfilename -r 96000 -D 100 -d 100 -i TDM-LPAIF-RX-TERTIARY-VIRT-0
 
 killall agmcap
 

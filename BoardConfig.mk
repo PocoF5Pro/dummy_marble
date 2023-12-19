@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/marble
+DEVICE_PATH := device/xiaomi/mondrian
 
 # A/B
 AB_OTA_UPDATER := true
@@ -45,19 +45,16 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 TARGET_BOOTLOADER_BOARD_NAME := taro
 TARGET_NO_BOOTLOADER := true
 
-# Display
-TARGET_SCREEN_DENSITY := 440
-
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 4
-BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 disable_dma32=on swinfo.fingerprint=marble_eea:12/V816.0.4.0.UMREUXM:user mtdoops.fingerprint=marble_eea:12/V816.0.4.0.UMREUXM:user bootconfig
+BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 disable_dma32=on swinfo.fingerprint=mondrian:12/V816.0.23.12.11.DEV:user mtdoops.fingerprint=mondrian:12/V816.0.23.12.11.DEV:user bootconfig
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := marble_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/marble
+TARGET_KERNEL_CONFIG := mondrian_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/mondrian
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -114,4 +111,4 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
-include vendor/xiaomi/marble/BoardConfigVendor.mk
+include vendor/xiaomi/mondrian/BoardConfigVendor.mk

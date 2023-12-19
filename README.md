@@ -1,4 +1,4 @@
-# Android device tree for Xiaomi marble (marble)
+# Android device tree for Redmi 23013RK75C (mondrian)
 
 ```
 #
